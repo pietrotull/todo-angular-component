@@ -2,7 +2,9 @@
 <br/>
 <my-add-todo-form></my-add-todo-form>
 <br/>
-<p class="input-group" ng-repeat="item in items">
+<p ng-repeat="item in items">
+  <my-todo todo="item" index="$index"></my-todo>
+  <!--
   <span class="input-group-btn">
     <button class="btn btn-info" ng-click="markDone($index)" aria-label="MarkDone">
       <span class="glyphicon glyphicon-ok" />
@@ -14,5 +16,6 @@
       <span class="glyphicon glyphicon-remove" />
     </button>
   </span>
+  -->
 </p>
 <br/>

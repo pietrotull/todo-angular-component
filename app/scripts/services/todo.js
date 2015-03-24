@@ -20,5 +20,10 @@ angular.module('todoV2App')
         todos.splice(id, 1);
       };
 
+      todo.markDone = function(id) {
+        console.log('marking done: ' + id);
+        todos[id].done = !todos[id].done;
+      };
+
       return todo;
   });

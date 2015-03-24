@@ -6,7 +6,6 @@ angular.module('todoV2App')
     scope: {},
     templateUrl: '/scripts/directives/myAddTodoForm.html',
     controller: function($scope, TodoService) {
-        console.log('loaded');
         $scope.newTodoText = '';
         $scope.addTodo = function() {
             // $scope.items.push({text: $scope.newTodoText, done: false});
