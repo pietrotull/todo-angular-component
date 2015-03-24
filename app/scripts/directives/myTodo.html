@@ -1,0 +1,13 @@
+<div class="input-group">
+  <span class="input-group-btn">
+    <button class="btn btn-info" ng-click="markDone($index)" aria-label="MarkDone">
+      <span class="glyphicon glyphicon-ok" />
+    </button>
+  </span>
+  <input type="text" ng-class="isDone()" ng-model="todo.text" class="form-control">
+  <span class="input-group-btn">
+    <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">
+      <span class="glyphicon glyphicon-remove" />
+    </button>
+  </span>
+</div>
