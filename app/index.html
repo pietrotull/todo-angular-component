@@ -31,18 +31,6 @@
 
     <my-footer></my-footer>
 
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
-
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -57,13 +45,14 @@
     <!-- endbower -->
     <!-- endbuild -->
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/directives/myFooter.js"></script>
-        <script src="scripts/directives/myAddTodoForm.js"></script>
-        <script src="scripts/directives/myTodo.js"></script>
-        <script src="scripts/services/todo.js"></script>
-        <!-- endbuild -->
-</body>
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/directives/myFooter.js"></script>
+    <script src="scripts/directives/myAddTodoForm.js"></script>
+    <script src="scripts/directives/myTodoList.js"></script>
+    <script src="scripts/directives/myTodo.js"></script>
+    <script src="scripts/services/todo.js"></script>
+    <!-- endbuild -->
+  </body>
 </html>

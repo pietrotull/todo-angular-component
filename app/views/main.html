@@ -2,20 +2,5 @@
 <br/>
 <my-add-todo-form></my-add-todo-form>
 <br/>
-<p ng-repeat="item in items">
-  <my-todo todo="item" index="$index"></my-todo>
-  <!--
-  <span class="input-group-btn">
-    <button class="btn btn-info" ng-click="markDone($index)" aria-label="MarkDone">
-      <span class="glyphicon glyphicon-ok" />
-    </button>
-  </span>
-  <input type="text" ng-class="isDone(item)" ng-model="item.text" class="form-control">
-  <span class="input-group-btn">
-    <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">
-      <span class="glyphicon glyphicon-remove" />
-    </button>
-  </span>
-  -->
-</p>
+<my-todo-list></my-todo-list>
 <br/>

@@ -9,6 +9,7 @@ angular.module('todoV2App')
     },
     templateUrl: '/scripts/directives/myTodo.html',
     controller: function ($scope, TodoService) {
+
       $scope.markDone = function () {
         TodoService.markDone($scope.index)
       };
